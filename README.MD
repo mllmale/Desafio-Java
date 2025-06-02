@@ -1,0 +1,75 @@
+# Sistema de Biblioteca - Java
+
+Sistema de biblioteca desenvolvido em **Java** que simula o funcionamento básico de **empréstimo** e **devolução** de livros por usuários (alunos e professores). O projeto implementa conceitos de **orientação a objetos**, **princípios SOLID** e **arquitetura limpa** com divisão clara de responsabilidades.
+
+---
+
+## Arquitetura
+
+O projeto segue os princípios da **Arquitetura Limpa** e **SOLID**, dividido nas seguintes camadas:
+
+### 🔹 Entidades
+
+Representam as regras de negócio centrais:
+
+- `Livro`
+- `Usuario` (classe abstrata)
+- `Aluno` (subclasse de Usuario)
+- `Professor` (subclasse de Usuario)
+
+### 🔹 Casos de Uso
+
+Contêm a lógica da aplicação:
+
+- `EmprestarLivroUseCase`
+- `DevolverLivroUseCase`
+
+### 🔹 Interfaces
+
+Definem os contratos e abstrações para os repositórios:
+
+- `BibliotecaRepository`
+
+### 🔹 Implementações
+
+Contêm implementações concretas dos repositórios:
+
+- `BibliotecaRepositoryImpl` (exemplo)
+
+---
+
+## Princípios SOLID Aplicados
+
+- **S - Single Responsibility Principle (SRP)**  
+  Cada classe tem uma única responsabilidade.
+
+- **O - Open/Closed Principle (OCP)**  
+  As classes são abertas para extensão, mas fechadas para modificação.
+
+- **L - Liskov Substitution Principle (LSP)**  
+  Subclasses podem ser utilizadas no lugar das classes base sem quebrar a lógica.
+
+- **I - Interface Segregation Principle (ISP)**  
+  Interfaces são específicas e evitam obrigar a implementação de métodos desnecessários.
+
+- **D - Dependency Inversion Principle (DIP)**  
+  O sistema depende de abstrações, não de implementações concretas.
+
+---
+
+## Tecnologias Utilizadas
+
+- Java (versão 11 ou superior recomendada)
+- Programação Orientada a Objetos (POO)
+- Arquitetura Limpa
+- Princípios SOLID
+
+---
+
+## Funcionalidades
+
+- Cadastro de livros
+- Cadastro de usuários (aluno e professor)
+- Empréstimo de livros com regras específicas por tipo de usuário
+- Devolução de livros
+- Controle de limite de empréstimos por usuário
