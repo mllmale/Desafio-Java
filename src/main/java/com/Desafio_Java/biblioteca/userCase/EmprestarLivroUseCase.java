@@ -8,7 +8,7 @@ import com.Desafio_Java.biblioteca.repository.BibliotecaRepository;
 
 import java.util.Optional;
 
-public class EmprestarLivroUseCase {  // ← NOME CORRIGIDO
+public class EmprestarLivroUseCase {
     private BibliotecaRepository bibliotecaRepository;
 
     public EmprestarLivroUseCase(BibliotecaRepository bibliotecaRepository) {

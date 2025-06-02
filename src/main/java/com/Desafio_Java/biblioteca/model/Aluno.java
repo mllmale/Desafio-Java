@@ -1,9 +1,5 @@
 package com.Desafio_Java.biblioteca.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
 public class Aluno extends Usuario {
     private int creditos;
 
